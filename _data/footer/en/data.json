@@ -1,0 +1,124 @@
+{
+  "logo": "/picture.png",
+  "heading": "safeimagekit.com",
+  "companytitle": "Company",
+  "producttitle": "Product",
+  "networksitestitle": "Network sites",
+  "company": [
+    {
+      "name": "Terms and Condition",
+      "url": "/terms-and-conditions"
+    },
+    {
+      "name": "Disclaimer",
+      "url": "/disclaimer"
+    },
+    {
+      "name": "Privacy",
+      "url": "/privacy-policy"
+    }
+  ],
+  "product": [
+    {
+      "name": "Convert image to base64",
+      "description": "Free online image to base64 converter",
+      "color": "#5581b5d6",
+      "icon": "/img/home/base64.png",
+      "url": "/convert-image-to-base64"
+    },
+    {
+      "name": "Convert base64 to image",
+      "description": "Free online base64 to image converter",
+      "color": "#5581b5",
+      "icon": "/img/home/base64.png",
+      "url": "/convert-base64-to-image"
+    },
+    {
+      "name": "Image to data uri converter",
+      "description": "Online image to data uri conversion tool",
+      "color": "#5581b5d6",
+      "icon": "/img/home/data-uri.png",
+      "url": "/convert-image-to-data-uri"
+    },
+    {
+      "name": "Convert data uri to image",
+      "description": "Online data uri to image conversion tool",
+      "color": "#5581b5",
+      "icon": "/img/home/data-uri.png",
+      "url": "/convert-data-uri-to-image"
+    },
+    {
+      "name": "Convert bmp to base64",
+      "description": "Free online bmp to base64 converter",
+      "color": "#5581b5d6",
+      "icon": "/img/home/base64.png",
+      "url": "/convert-bmp-to-base64"
+    },
+    {
+      "name": "Convert base64 to bmp",
+      "description": "Free online base64 to bmp converter",
+      "color": "#5581b5",
+      "icon": "/img/home/base64.png",
+      "url": "/convert-base64-to-bmp"
+    },
+    {
+      "name": "Convert gif to base64",
+      "description": "Free online gif to base64 converter",
+      "color": "#5581b5d6",
+      "icon": "/img/home/base64.png",
+      "url": "/convert-gif-to-base64"
+    },
+    {
+      "name": "Convert base64 to gif",
+      "description": "Free online base64 to gif converter",
+      "color": "#5581b5",
+      "icon": "/img/home/base64.png",
+      "url": "/convert-base64-to-gif"
+    },
+    {
+      "name": "Base64 encode png",
+      "description": "Free online png to base64 converter",
+      "color": "#5581b5d6",
+      "icon": "/img/home/tool.png",
+      "url": "/base64-encode-png"
+    }
+  ],
+  "social": [
+    {
+      "logo": "/assets/facebook.svg",
+      "url": "/",
+      "title": "facebook"
+    },
+    {
+      "logo": "/assets/youtube.svg",
+      "url": "/",
+      "title": "youtube"
+    },
+    {
+      "logo": "/assets/instagram.svg",
+      "url": "/",
+      "title": "instagram"
+    },
+    {
+      "logo": "/assets/linkdin.svg",
+      "url": "/",
+      "title": "linkedin"
+    },
+    {
+      "logo": "/assets/twitter.svg",
+      "url": "/",
+      "title": "twitter"
+    }
+  ],
+  "legal": [
+    {
+      "name": "About Us",
+      "url": "about"
+    },
+    {
+      "name": "Contact Us",
+      "url": "contact"
+    }
+  ],
+  "messege": "© 2022 - safeimagekit.com"
+}

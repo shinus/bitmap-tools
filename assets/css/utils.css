@@ -1,0 +1,398 @@
+#canvas-panel {
+  padding: 40px;
+  background: url('/img/transparent.png');
+  border-radius: 4px;
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#canvas-panel #canvas-img {
+  max-width: 100%;
+}
+.options-panel {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  padding: 20px;
+  width: 100%;
+}
+.options-panel .title {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+.options-panel .description {
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+  text-align: left;
+}
+.options-title {
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+  text-align: left;
+}
+#download-button,
+.download-txt {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 50px;
+  background: #0050e5;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+}
+#download-button svg {
+  fill: #fff;
+  margin-right: 4px;
+  height: 20px;
+}
+#img-svg {
+  margin: auto;
+  margin-top: 16px;
+  height: 67px;
+  width: 98px;
+}
+#file-loader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#file-loader img {
+  height: 60px;
+}
+#file-loader p {
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+}
+#loading-img {
+  height: 27px;
+  width: 27px;
+  margin-right: 21px;
+}
+.inner-box {
+  border: 1px dashed rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  min-height: 300px;
+  width: 100%;
+}
+#dropfile {
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#dropfile {
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+#svgcontainer {
+  height: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+#upper-loader {
+  width: 0%;
+  height: 13px;
+  background: white;
+}
+.frame {
+  background: red;
+  border: 1px solid white;
+  width: 80%;
+  height: 350px;
+  margin: auto;
+}
+#demo {
+  visibility: hidden;
+}
+
+.up {
+  margin-left: 10px;
+  color: white;
+  border: 3px solid white;
+  width: 200px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#loader-box {
+  background: url('../spinner.gif');
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+#nav {
+  width: 80%;
+  margin: auto;
+  border: 3px solid white;
+  height: 70px;
+}
+
+#errorMessage {
+  color: yellow;
+  font-size: 25px;
+  text-align: center;
+}
+
+.file {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
+}
+
+#inp {
+  margin: auto;
+  width: 300px;
+  height: 47px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.boxes {
+  background: #fff;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 15px 24px;
+  height: 54px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 800;
+  margin-top: -14px;
+}
+
+#content {
+  visibility: hidden;
+}
+
+.boxes p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+#message {
+  color: yellow;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.error1,
+.error2 {
+  color: #611a15;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  background: #fdecea;
+}
+#error {
+  color: rgb(97, 26, 21);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  visibility: hidden;
+  background: rgb(253, 236, 234);
+}
+
+#loadingMessage {
+  margin-top: 130px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+@media (max-width: 560px) {
+  #loadingMessage {
+    font-size: 24px;
+  }
+}
+@media (max-width: 425px) {
+  #loadingMessage {
+    font-size: 20px;
+  }
+}
+
+#downloadButton {
+  padding: 10px 16px;
+  background: white;
+}
+
+#thankyouImage {
+  height: 80px;
+  width: 80px;
+  margin-top: 50px;
+}
+#thankyouText {
+  text-align: center;
+  color: white;
+  margin-top: 13px;
+  font-size: 17px;
+}
+
+.file-pick-dropdown {
+  display: inline-flex;
+  background: #fff;
+  height: 54px;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 13px 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  align-items: center;
+  position: relative;
+  margin-top: -14px;
+}
+.file-pick-dropdown i {
+  margin: 0;
+}
+.file-picker-dropdown {
+  width: 220px;
+  position: absolute;
+  background: #fff;
+  top: 111%;
+  right: 0px;
+  display: none;
+  box-shadow: rgb(26 26 26 / 20%) 0px 0px 12px;
+  border-radius: 4px;
+}
+.arrow-sign {
+  font-size: 18px;
+}
+.file-picker-dropdown svg {
+  height: 24px;
+  width: 24px;
+}
+.file-picker-dropdown button,
+.file-picker-dropdown a {
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left;
+  background: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 24px;
+  list-style: none;
+  height: 54px;
+}
+.file-picker-dropdown button:hover {
+  background: #efefef;
+}
+#downloadButton svg {
+  height: 25px;
+}
+
+.container2 {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+#upload_img {
+  margin: auto;
+  margin-top: 16px;
+  height: 67px;
+  width: 98px;
+  margin-bottom: 30px !important;
+}
+
+@media (max-width: 387px) {
+  #inp {
+    width: 90%;
+  }
+}
+#saving {
+  height: 59px;
+  width: 209px;
+  border: 3px solid white;
+  background: rgba(90, 90, 90, 0.466);
+}
+
+.submit {
+  padding: 14px 84px;
+  margin-left: -1px;
+}
+
+@media (max-width: 592px) {
+  .splitInput {
+    width: 80%;
+  }
+}
+@media (max-width: 506px) {
+  #saving {
+    margin-right: 13px;
+  }
+}
+
+#splitList {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+  margin-top: 45px;
+}
+#splitList ol li {
+  color: white;
+}
+#splitList ol {
+  float: left;
+}
+#splitList canvas {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.splitBtn {
+  margin: 15px;
+  padding: 11px 18px;
+  width: 155px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

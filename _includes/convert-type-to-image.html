@@ -1,0 +1,64 @@
+<div class="container">
+    {%- assign boxColor = site.data[page.folderName][page.lang][page.fileName].color -%}
+    <div class="custom-box d-none" data-color="{{boxColor}}" style="background-color:{{boxColor}};">
+        <div class="inner-box">
+            <div style="display:none;" id="file-loader"><img src="/spinner.gif" alt="">
+                <p>Please Wait ,Loading Your file </p>
+            </div>
+        </div>
+    </div>
+    <div class="workspace" data-mime="{{page.mimeType}}">
+        <div class="row text-left">
+            <div class="col-md-6">
+                <span class="text-left" id="data-type">{{page.convert}}</span>
+                <div class="options-panel p-0 ">
+                    <div class="converterBox">
+                        <textarea style="background-color:{{boxColor}};" class=" form-control" name="data-uri"
+                            id="data-uri"></textarea>
+                    </div>
+                </div>
+
+                <div class="side-widgets-wrapper" style="background-color:{{boxColor}}">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="download-wrapper">
+                                <button class="download-txt" onclick="downloadToText()"
+                                    style="background-color:{{boxColor}}; border-radius:0">
+                                    Download text</button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div style="position: relative; top:16px; cursor: pointer;">
+                                <div class="copy-btn">
+                                    Copy to clipboard
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <span class="text-left" id="data-type">{{page.to}}</span>
+                <div class="select-img-panel">
+                    <div id="saving-data" style="display: none;">
+                        <img loading="lazy" src="/img/save.gif" alt="saving"> <span class="ml-2">Saving your
+                            images...</span>
+                    </div>
+                    <div id="canvas-panel"> </div>
+                    <div class="side-widgets-wrapper" style="background-color:{{boxColor}}">
+                        <div class="download-wrapper">
+                            <button id="download-button" onclick="handleDownload()"
+                                style="background-color:{{boxColor}}; border-radius:0">
+                                Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<input class="d-none" onchange="fileOnChange()" type="file" id="file" accept=".webp,.png,.jpg,.jpeg,.gif" />

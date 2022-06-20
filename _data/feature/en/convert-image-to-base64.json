@@ -1,0 +1,76 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "H1": "Free online image to Base64 converter",
+    "H2": "Convert image to base64 in simple steps",
+    "TITLE": "Convert Image to base64- Simple and easy to use tool",
+    "META": "This tool helps you to convert your Image to Base64 with just few clicks. The simplest tool for web developers.",
+    "img": "/img/base64.png",
+    "keywords": "",
+    "imgwidth": "40px",
+    "imgheight": "40px",
+    "imgalt": "base64",
+    "nofileupload": true,
+    "variant": "primary",
+    "BREADCRUMB_LABEL": "",
+    "color": "#5581b5d6",
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/guaranty.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "cssfilepaths": [
+        "/assets/css/utils.css",
+        "/assets/css/converters.css"
+    ],
+    "jscdns": [
+        "<script src=\"/assets/js/googledrive.js\"></script>"
+    ],
+    "jsfilepaths": [
+        "/assets/js/convert-image-to-base64.js"
+    ]
+}

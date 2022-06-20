@@ -1,0 +1,88 @@
+{
+  "navbarBrandText": "",
+  "navbarBrandLogo": "/picture.png",
+  "megaMenu": {
+    "nav-link-name": "Tools",
+    "dropdown": [
+      {
+        "categoryName": "Base64",
+        "links": [
+          {
+            "name": "Convert image to base64",
+            "description": "Free online image to base64 converter",
+            "color": "#5581b5d6",
+            "iconSrc": "/img/base64.png",
+            "url": "/convert-image-to-base64"
+          },
+          {
+            "name": "Convert base64 to image",
+            "description": "Free online base64 to image converter",
+            "color": "#5581b5",
+            "iconSrc": "/img/base64.png",
+            "url": "/convert-base64-to-image"
+          },
+          {
+            "name": "Convert bmp to base64",
+            "description": "Free online bmp to base64 converter",
+            "color": "#5581b5d6",
+            "iconSrc": "/img/base64.png",
+            "url": "/convert-bmp-to-base64"
+          },
+          {
+            "name": "Convert base64 to bmp",
+            "description": "Free online base64 to bmp converter",
+            "color": "#5581b5",
+            "iconSrc": "/img/base64.png",
+            "url": "/convert-base64-to-bmp"
+          },
+          {
+            "name": "Convert gif to base64",
+            "description": "Free online gif to base64 converter",
+            "color": "#5581b5d6",
+            "iconSrc": "/img/base64.png",
+            "url": "/convert-gif-to-base64"
+          },
+          {
+            "name": "Convert base64 to gif",
+            "description": "Free online base64 to gif converter",
+            "color": "#5581b5",
+            "iconSrc": "/img/base64.png",
+            "url": "/convert-base64-to-gif"
+          },
+          {
+            "name": "Base64 encode png",
+            "description": "Free online png to base64 converter",
+            "color": "#5581b5d6",
+            "iconSrc": "/img/tool.png",
+            "url": "/base64-encode-png"
+          }
+        ]
+      },
+      {
+        "categoryName": "Data Uri",
+        "links": [
+          {
+            "name": "Image to data uri converter",
+            "description": "Online image to data uri conversion tool",
+            "color": "#5581b5d6",
+            "iconSrc": "/img/data-uri.png",
+            "url": "/convert-image-to-data-uri"
+          },
+          {
+            "name": "Convert data uri to image",
+            "description": "Online data uri to image conversion tool",
+            "color": "#5581b5",
+            "iconSrc": "/img/data-uri.png",
+            "url": "/convert-data-uri-to-image"
+          }
+        ]
+      }
+    ]
+  },
+  "navItems": [
+    {
+      "name": "Blog",
+      "url": "/blog"
+    }
+  ]
+}
