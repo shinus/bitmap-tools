@@ -1,0 +1,49 @@
+{
+    "tools": [
+        {
+            "name": "safeimagekit-base64",
+            "rating": "NaN",
+            "votes": 0
+        },
+        {
+            "name": "convert-gif-to-base64",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-data-uri-to-image",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-base64-to-gif",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-base64-to-image",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-image-to-data-uri",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-base64-to-bmp",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-bmp-to-base64",
+            "rating": "5.00",
+            "votes": 1
+        },
+        {
+            "name": "convert-image-to-base64",
+            "rating": "5.00",
+            "votes": 1
+        }
+    ]
+}

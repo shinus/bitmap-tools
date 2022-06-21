@@ -1,0 +1,133 @@
+.converterBox{
+  border-radius: 4px;
+  min-height: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#data-uri{
+    min-height: 400px;
+    height: 400px;
+    border-radius: 4px;
+    resize: unset;
+    background-color: #5581b5;
+    color:#fff;
+}
+#data-uri:focus{
+    box-shadow: unset;
+    border:none;
+    outline: none;
+}
+
+#data-type{
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    user-select: none;
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 27px;
+    left: 0;
+    font-weight: bold;
+    color: #5581b5;
+}
+
+/* width */
+#data-uri::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+#data-uri::-webkit-scrollbar-track {
+    background: #5581b5c4; 
+  }
+   
+  /* Handle */
+#data-uri::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.side-widgets-wrapper{
+    height: 56px;
+    border-radius: 4px;
+    color:#fff;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, .11));
+}
+#saving-data {
+    margin-top: 48px;
+  }
+  #saving-data img {
+    height: 42px;
+    width: 42px;
+  }
+  #saving-data span {
+    color: #0f0c0c;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #download-zip {
+    padding: 10px 16px;
+    background: #fff;
+  }
+  .saving-file-download-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trust-img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  
+  
+.copy-btn:hover::after, .copy_btn:hover::before {
+    opacity: 1;
+}
+.copy-btn::after, .copy_btn::before {
+    transform: translate3d(-50%,calc(-100% - 16px),0);
+}
+.copy-btn::after {
+    opacity: 0;
+    text-transform: none;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    position: absolute;
+    color: #fff;
+    background: #282828;
+    padding: 8px 12px;
+    width: 100px;
+    max-width: 200px;
+    pointer-events: none;
+    left: 50%;
+    top: 0;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+.copy-btn::before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    left: 50%;
+    transition: all .3s ease;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #282828 transparent transparent transparent;
+}
+
+@media (max-width: 768px) {
+    #data-type{
+        margin-top:20px;
+    }
+    
+}
+  

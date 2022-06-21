@@ -1,0 +1,76 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "H1": "Online Data URI to image conversion tool",
+    "H2": "Convert data uri to image in simple steps",
+    "TITLE": "Data uri to image converter- Best online free tool",
+    "META": "Convert data URL to image using this free online tool. Just Copy & paste the Data URI as input and get image file as output",
+    "img": "/img/data-uri.png",
+    "keywords": "",
+    "imgwidth": "40px",
+    "imgheight": "40px",
+    "imgalt": "base64",
+    "nofileupload": true,
+    "variant": "primary",
+    "BREADCRUMB_LABEL": "",
+    "color": "#5581b5",
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/guaranty.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "cssfilepaths": [
+        "/assets/css/utils.css",
+        "/assets/css/converters.css"
+    ],
+    "jscdns": [
+        "<script src=\"/assets/js/googledrive.js\"></script>"
+    ],
+    "jsfilepaths": [
+        "/assets/js/convert-data-uri-to-image.js"
+    ]
+}

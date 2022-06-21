@@ -1,0 +1,75 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "H1": "Free online base64 to GIF converter",
+    "H2": "Convert base64 to GIF in simple steps",
+    "TITLE": "Convert Base64 to GIF online directly in the browser.",
+    "META": "Best tool that converts base64-encoded into animated images and downloadable GIFs. No desktop software installation is required.",
+    "img": "/img/base64.png",
+    "imgwidth": "40px",
+    "imgheight": "40px",
+    "imgalt": "base64",
+    "nofileupload": true,
+    "variant": "primary",
+    "BREADCRUMB_LABEL": "",
+    "color": "#5581b5d6",
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/guaranty.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/idea.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "cssfilepaths": [
+        "/assets/css/utils.css",
+        "/assets/css/converters.css"
+    ],
+    "jscdns": [
+        "<script src=\"/assets/js/googledrive.js\"></script>"
+    ],
+    "jsfilepaths": [
+        "/assets/js/convert-base64-to-gif.js"
+    ]
+}
