@@ -47,17 +47,20 @@
         </div>
     </div>
     <div class="workspace" data-mime="{{page.mimeType}}">
-        <div class="row text-left">
-            <div class="col-md-6">
-                <span class="text-left" id="data-type">{{page.convert}}</span>
-                <div class="options-panel p-0 ">
-                    <div class="converterBox" style="height: 455px;">
-                        <textarea style="background-color:{{boxColor}}; height:455px" class=" form-control"
-                            name="data-uri" id="data-uri"></textarea>
-                    </div>
-                </div>
 
-                <!-- <div class="side-widgets-wrapper" style="background-color:{{boxColor}}">
+        <div class="row">
+            <div class="col-md-9 mx-auto">
+                <div class="row text-left">
+                    <div class="col-md-6">
+                        <span class="text-left" id="data-type">{{page.convert}}</span>
+                        <div class="options-panel p-0 ">
+                            <div class="converterBox" style="height: 455px;">
+                                <textarea style="background-color:{{boxColor}}; height:455px" class=" form-control"
+                                    name="data-uri" id="data-uri"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- <div class="side-widgets-wrapper" style="background-color:{{boxColor}}">
                     <div class="row">
                         <div class="col-6">
                             <div class="download-wrapper">
@@ -78,20 +81,22 @@
 
                 </div> -->
 
-            </div>
-            <div class="col-md-6">
-                <span class="text-left" id="data-type">{{page.to}}</span>
-                <div class="select-img-panel">
-                    <div id="saving-data" style="display: none;">
-                        <img loading="lazy" src="/img/save.gif" alt="saving"> <span class="ml-2">Saving your
-                            images...</span>
                     </div>
-                    <div id="canvas-panel"> </div>
-                    <div class="side-widgets-wrapper" style="background-color:{{boxColor}}">
-                        <div class="download-wrapper">
-                            <button id="download-button" onclick="handleDownload()"
-                                style="background-color:{{boxColor}}; border-radius:0">
-                                Download</button>
+                    <div class="col-md-6">
+                        <span class="text-left" id="data-type">{{page.to}}</span>
+                        <div class="select-img-panel">
+                            <div id="saving-data" style="display: none;">
+                                <img loading="lazy" src="/img/save.gif" alt="saving"> <span class="ml-2">Saving your
+                                    images...</span>
+                            </div>
+                            <div id="canvas-panel"> </div>
+                            <div class="side-widgets-wrapper" style="background-color:{{boxColor}}">
+                                <div class="download-wrapper">
+                                    <button id="download-button" onclick="handleDownload()"
+                                        style="background-color:{{boxColor}}; border-radius:0">
+                                        Download</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
