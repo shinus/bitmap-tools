@@ -13,21 +13,6 @@ const base64 = document.getElementById("data-uri")
 const copyBtn = document.querySelector(".copy-btn")
 base64.focus()
 
-const copyToClipboard = (str) => {
-    try {
-        const el = document.createElement('textarea')
-        el.value = str
-        document.body.appendChild(el)
-        el.select()
-        document.execCommand('copy')
-        document.body.removeChild(el)
-        copyBtn.setAttribute('data-tooltip', 'Copied !')
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-copyBtn.setAttribute('data-tooltip', 'Copy')
 
 const drawImage = () => {
     const canvas = document.createElement('canvas')
@@ -57,10 +42,10 @@ const handleFile = (file) => {
         })
         image.src = inputFile
 
-        downloadToText(getBase64String(e.target.result))
-        copyBtn.addEventListener('click', () => {
-            copyToClipboard(getBase64String(e.target.result))
-        })
+        // downloadToText(getBase64String(e.target.result))
+        // copyBtn.addEventListener('click', () => {
+        //     copyToClipboard(getBase64String(e.target.result))
+        // })
     }
 }
 
@@ -69,7 +54,7 @@ const downloadToText = (txt) => {
         let fileType = ".txt"
         let a = document.createElement('a')
         a.href = 'data:attachment/text,' + encodeURI(txt);
-        a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
+        a.download = `safeimagekit.${fileType}`
         document.body.appendChild(a)
         a.click()
         if (lang === 'en') {
@@ -83,15 +68,15 @@ const handleDownload = () => {
     workspace.style.display = "none"
     canvasPanel.style.display = 'none'
     document.querySelector("#file-loader").style.display = "none"
-    fileDropBox.style.display = 'flex'
+    // fileDropBox.style.display = 'flex'
 
-    let fileType = inputFile.type.split('image/')[1]
+    let fileType = "png"
     let canvas = document.querySelector('#canvas-img')
     let url = canvas.toDataURL(`image/${fileType}`)
 
     let a = document.createElement('a')
     a.href = url
-    a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
+    a.download = `safeimagekit.${fileType}`
     document.body.appendChild(a)
     a.click()
     if (lang === 'en') {

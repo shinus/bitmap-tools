@@ -13,21 +13,21 @@ const base64 = document.getElementById('data-uri')
 const copyBtn = document.querySelector('.copy-btn')
 base64.focus()
 
-const copyToClipboard = (str) => {
-  try {
-    const el = document.createElement('textarea')
-    el.value = str
-    document.body.appendChild(el)
-    el.select()
-    document.execCommand('copy')
-    document.body.removeChild(el)
-    copyBtn.setAttribute('data-tooltip', 'Copied !')
-  } catch (error) {
-    console.log(error)
-  }
-}
+// const copyToClipboard = (str) => {
+//   try {
+//     const el = document.createElement('textarea')
+//     el.value = str
+//     document.body.appendChild(el)
+//     el.select()
+//     document.execCommand('copy')
+//     document.body.removeChild(el)
+//     copyBtn.setAttribute('data-tooltip', 'Copied !')
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
 
-copyBtn.setAttribute('data-tooltip', 'Copy')
+// copyBtn.setAttribute('data-tooltip', 'Copy')
 
 const drawImage = () => {
   canvasPanel.innerHTML = ''

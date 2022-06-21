@@ -84,14 +84,13 @@ const drawImage = () => {
     canvas.height = image.height
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
 
+    workspace.style.display = 'block'
     canvasPanel.innerHTML = ''
     canvasPanel.appendChild(canvas)
 }
 
 const handleFile = (file) => {
     showLoading()
-    document.querySelector('#file-loader').style.display = 'flex'
-    document.querySelector('.file-input').style.display = 'none'
     inputFile = file
     if (file) {
         const reader = new FileReader()
@@ -115,13 +114,13 @@ const handleFile = (file) => {
         }
         reader.readAsDataURL(file)
     }
-    workspace.style.display = 'block'
+
 
 }
 
 const downloadToText = (txt) => {
     document.querySelector(".download-txt").addEventListener("click", () => {
-        let fileType = ".txt"
+        let fileType = "txt"
         let a = document.createElement('a')
         a.href = 'data:attachment/text,' + encodeURI(txt);
         a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`

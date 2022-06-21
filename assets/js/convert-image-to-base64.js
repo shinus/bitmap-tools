@@ -112,7 +112,7 @@ const handleFile = (file) => {
 
 const downloadToText = (txt) => {
   document.querySelector('.download-txt').addEventListener('click', () => {
-    let fileType = '.txt'
+    let fileType = 'txt'
     let a = document.createElement('a')
     a.href = 'data:attachment/text,' + encodeURI(txt)
     a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`

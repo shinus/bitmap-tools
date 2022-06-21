@@ -3,7 +3,7 @@ layout: feature
 folderName: feature
 lang: en
 fileName: convert-base64-to-gif
-permalink: /convert-base64-to-gif
+permalink: base64/convert-base64-to-gif
 tool: convert-base64-to-gif
 noBox: true
 convert: base64
