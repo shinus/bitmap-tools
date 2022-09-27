@@ -1,76 +1,78 @@
 {
-    "Language": "English",
-    "htmlLangAtt": "en",
-    "H1": "Online image to Data URI conversion tool",
-    "H2": "Convert image to data uri in simple steps",
-    "TITLE": "Free tool to convert image (png, jpeg) files to Data URI quickly",
-    "META": "Online image to Data URI conversion tool is the best tool to improve your webpage performance. Online, free, simple and easy to use tool",
-    "img": "/img/data-uri.png",
-    "keywords": "",
-    "imgwidth": "40px",
-    "imgheight": "40px",
-    "imgalt": "base64",
-    "nofileupload": true,
-    "variant": "primary",
-    "BREADCRUMB_LABEL": "",
-    "color": "#5581b5",
-    "TEXTUAL_CONTENT": [
-        {
-            "priority": 1,
-            "logoUrl": "/assets/bulb.svg",
-            "header": "",
-            "content": ""
-        },
-        {
-            "priority": 1,
-            "logoUrl": "/assets/guaranty.svg",
-            "header": "",
-            "content": ""
-        },
-        {
-            "priority": 1,
-            "logoUrl": "/assets/support.svg",
-            "header": "",
-            "content": ""
-        },
-        {
-            "priority": 1,
-            "logoUrl": "/assets/protect.svg",
-            "header": "",
-            "content": ""
-        },
-        {
-            "priority": 1,
-            "logoUrl": "/assets/easy.svg",
-            "header": "",
-            "content": ""
-        },
-        {
-            "priority": 1,
-            "logoUrl": "/assets/cloud.svg",
-            "header": "",
-            "content": ""
-        }
-    ],
-    "HOW_TO_CONTENT": {
-        "logoImageUrl": "/idea.svg",
-        "heading": "",
-        "steps": []
+  "Language": "English",
+  "htmlLangAtt": "en",
+  "H1": "Online image to Data URI conversion tool",
+  "H2": "Convert image to data uri in simple steps",
+  "TITLE": "Free tool to convert image (png, jpeg) files to Data URI quickly",
+  "META": "Online image to Data URI conversion tool is the best tool to improve your webpage performance. Online, free, simple and easy to use tool",
+  "img": "/img/data-uri.png",
+  "keywords": "",
+  "imgwidth": "40px",
+  "imgheight": "40px",
+  "imgalt": "base64",
+  "nofileupload": true,
+  "variant": "primary",
+  "BREADCRUMB_LABEL": "",
+  "color": "#5581b5",
+  "TEXTUAL_CONTENT": [
+    {
+      "priority": 1,
+      "logoUrl": "/assets/bulb.svg",
+      "header": "",
+      "content": ""
     },
-    "FAQ": [
-        {
-            "question": "",
-            "answer": ""
-        }
-    ],
-    "cssfilepaths": [
-        "/assets/css/utils.css",
-        "/assets/css/converters.css"
-    ],
-    "jscdns": [
-        "<script src=\"/assets/js/googledrive.js\"></script>"
-    ],
-    "jsfilepaths": [
-        "/assets/js/convert-image-to-data-uri.js"
+    {
+      "priority": 1,
+      "logoUrl": "/assets/guaranty.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/support.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/protect.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/easy.svg",
+      "header": "",
+      "content": ""
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/cloud.svg",
+      "header": "",
+      "content": ""
+    }
+  ],
+  "HOW_TO_CONTENT": {
+    "logoImageUrl": "/idea.svg",
+    "heading": "",
+    "steps": [
+
     ]
+  },
+  "FAQ": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "cssfilepaths": [
+    "/assets/css/utils.css",
+    "/assets/css/converters.css"
+  ],
+  "jscdns": [
+    "<script src=\"/assets/js/googledrive.js\"></script>"
+  ],
+  "jsfilepaths": [
+    "/assets/js/convert-image-to-data-uri.js"
+  ]
 }
