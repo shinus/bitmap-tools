@@ -18,51 +18,100 @@
     {
       "priority": 1,
       "logoUrl": "/assets/bulb.svg",
-      "header": "",
-      "content": ""
+      "header": "High Quality",
+      "content": "Our free image to base64 converter tool converts the image to base64 in simple steps on the online platform for free of cost by retaining its quality."
     },
     {
-      "priority": 1,
+      "priority": "2",
       "logoUrl": "/assets/guaranty.svg",
-      "header": "",
-      "content": ""
+      "header": "Data Security",
+      "content": "No data is sent on our servers; all the operations are performed on the browser itself. This helps us to be 100% safe for our users."
     },
     {
-      "priority": 1,
+      "priority": "3",
       "logoUrl": "/assets/support.svg",
-      "header": "",
-      "content": ""
+      "header": "Flexibility",
+      "content": "Our image to base64 converter tool works on almost all kinds of browsers and devices."
     },
     {
-      "priority": 1,
+      "priority": "4",
       "logoUrl": "/assets/protect.svg",
-      "header": "",
-      "content": ""
+      "header": "User friendly",
+      "content": "Our image to base64 converter tool is very easy to understand. No professional is required to work on our tool."
     },
     {
-      "priority": 1,
+      "priority": "5",
       "logoUrl": "/assets/easy.svg",
-      "header": "",
-      "content": ""
+      "header": "Free of cost",
+      "content": "Our image to base64 converter tool is completely free of cost. Our tool is used without paying a single penny."
     },
     {
-      "priority": 1,
+      "priority": "6",
       "logoUrl": "/assets/cloud.svg",
-      "header": "",
-      "content": ""
+      "header": "No additional download",
+      "content": "Our image to base64 converter tool is completely browser-based, and no additional software is required to be downloaded on your device."
     }
   ],
   "HOW_TO_CONTENT": {
     "logoImageUrl": "/idea.svg",
-    "heading": "",
+    "heading": "How to convert the image to base64 in simple steps.",
     "steps": [
-
+      "1. Upload the desired image file or Click on the drop-down arrow and select dropbox/Google Drive",
+      "2. Adjust the size and style of the image by using the options available.",
+      "3. Adjust the desired orientation of the image.",
+      "4. Punch the save option to save the changes made.",
+      "5. Download the converted image by punching the download option.",
+      "6. Hurray!!! The converted image to base64 is ready to rock."
     ]
   },
   "FAQ": [
     {
-      "question": "",
-      "answer": ""
+      "question": "Is it safe to allow access to my drive by this tool?",
+      "answer": "Yes, it is safe to allow and give us access to the drive. As we won't be making any changes to your site, your converted image will be safe with you."
+    },
+    {
+      "question": "How can I upload an image from my drive/dropbox?",
+      "answer": "Click on the drop-down arrow and select the image from dropbox/Google Drive. One can upload the image as per their need."
+    },
+    {
+      "question": "What are the features offered by the “The image to base64 converter tool”?",
+      "answer": "The image to base64 converter tool offers versatile features while converting the image to base64. The features include converting the image by adjusting the dimensions of the image, such as height, width, shape, etc. This feature provides accurate rotation adjustment. The image to base64 converter tool also inherits the option to adjust the quality of the image to the user’s advantage."
+    },
+    {
+      "question": "What are the parameters provided by the image to the base64 converter tool?",
+      "answer": "The image to base64 converter tool provides various parameters after the user uploads the image; these parameters are the name of the image, size of the image, type of the image, etc. The last modified parameters include time, date, and time zone."
+    },
+    {
+      "question": "What are the special features provided by the image to base64 converter tool?",
+      "answer": "The image to base64 converter tool facilitates many features while converting the image to a base64. It allows the user to adjust the measurements. At the same time, the min-width and min-height provide the user with a minimum limit of image."
+    },
+    {
+      "question": "How does the quality adjustment option of an image to base64 converter tool work?",
+      "answer": "The quality adjustment option of the image to base64 converter tool is an important feature that lets the user decide the overall quality of the image. This feature adjusts the sharpness, contrast, blur (in small amounts), and many other image-related parameters. Mark the measurement scale for the shape."
+    },
+    {
+      "question": "Can the user use the image to base64 converter tool on my LINUX operating system?",
+      "answer": "Yes, the image to base64 converter tool can be utilized on any operating system. It is built with the latest code and features, which enables the user to convert images to base64 uploaded by the user on any operating system with a stable internet connection."
+    },
+    {
+      "question": "Can we use the image to base64 converter tool on my Apple iPhone 11?",
+      "answer": "Yes, the image to base64 converter tool is a cross-platform-based feature, where the user can use this image to base64 converter tool on all operating systems such as Android, iOS, Windows, and Mac OS. It is independent of the operating systems but depends on the internet connection."
+    },
+    {
+      "question": "Will my uploaded image files corrupt after converting the image using the exquisite options present in the image to the base64 converter tool from safeimagekit.com?",
+      "answer": "No, the image to base64 converter tool is built with all the latest programs and security features which do not allow the uploaded image files to be corrupt. So, the image files are safe and secure. Also, safeimagekit.com is a server-free website, due to which no image files are stored and are instantly deleted from the memory as soon as the webpage is closed."
+    },
+    {
+      "question": "Will my file is saved after accomplishing working on the image to base64 converter tool?",
+      "answer": "No, our tool does not transmit your files to our servers. All the operations are performed on the browser itself, which is completely safe."
+    },
+    {
+      "question": "Do I have to do any additional signup or pay extra to use the image to base64 converter tool?",
+      "answer": "Absolutely not; our tool is completely online and does not require email IDs, passwords etc. Our tool is free of cost."
+    },
+    {
+      "question": "How do I communicate if I face any issues or if I want to give any suggestions?",
+      "answer": "We gladly consider any of the issues or suggestions faced by our users offered to all of our users; please contact us through our social media handles for more information. Safeimagekit.com is available on Facebook, Instagram, YouTube, LinkedIn, etc."
     }
   ],
   "cssfilepaths": [
