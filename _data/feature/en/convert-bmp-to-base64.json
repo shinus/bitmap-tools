@@ -18,51 +18,100 @@
     {
       "priority": 1,
       "logoUrl": "/assets/bulb.svg",
-      "header": "",
-      "content": ""
+      "header": "High Quality",
+      "content": "Our free bmp to base64 converter tool converts the bmp to base64 in simple steps on the online platform for free of cost by retaining its quality."
     },
     {
-      "priority": 1,
+      "priority": "2",
       "logoUrl": "/assets/guaranty.svg",
-      "header": "",
-      "content": ""
+      "header": "Data Security",
+      "content": "No data is transmitted on our server; all the operations are performed on the browser itself. This helps us to be 100% safe for our users."
     },
     {
-      "priority": 1,
+      "priority": "3",
       "logoUrl": "/assets/support.svg",
-      "header": "",
-      "content": ""
+      "header": "Flexibility",
+      "content": "Our bmp to base64 converter tool works on almost all kinds of browsers and devices."
     },
     {
-      "priority": 1,
+      "priority": "4",
       "logoUrl": "/assets/protect.svg",
-      "header": "",
-      "content": ""
+      "header": "User friendly",
+      "content": "Our bmp to base64 converter tool is very easy to understand. No professional is required to work on this tool."
     },
     {
-      "priority": 1,
+      "priority": "5",
       "logoUrl": "/assets/easy.svg",
-      "header": "",
-      "content": ""
+      "header": "Free of cost",
+      "content": "Our bmp to base64 converter tool is completely free of cost. Our tool is used without paying a single penny."
     },
     {
-      "priority": 1,
+      "priority": "6",
       "logoUrl": "/assets/cloud.svg",
-      "header": "",
-      "content": ""
+      "header": "No additional download",
+      "content": "Our bmp to base64 converter tool is completely browser-based, and no additional software is required to be downloaded on your device."
     }
   ],
   "HOW_TO_CONTENT": {
     "logoImageUrl": "/idea.svg",
-    "heading": "",
+    "heading": "How to convert the bmp to base64 in simple steps.",
     "steps": [
-
+      "1. Upload the bmp file or Click on the drop-down arrow and select dropbox/Google Drive",
+      "2. Adjust the size of the base64 by using the options available.",
+      "3. Adjust the desired orientation of the base64.",
+      "4. Punch the save option to save the changes made.",
+      "5. Download the converted file by punching on the download option.",
+      "6. Hurray!!! The converted bmp to base64 is ready to rock."
     ]
   },
   "FAQ": [
     {
-      "question": "",
-      "answer": ""
+      "question": "Is it safe to allow access to my drive by this tool?",
+      "answer": "Yes, it is safe to allow and give us access to the drive. As we won't be making any changes to your site and your converted bmp to base64 will be safe with you."
+    },
+    {
+      "question": "How can I upload a file from my drive/dropbox?",
+      "answer": "Click on the drop-down arrow and select the file from dropbox/Google Drive. One can upload the file as per their need."
+    },
+    {
+      "question": "What are the features offered by the “The bmp to base64 converter tool”?",
+      "answer": "The bmp to base64 converter tool offers versatile features while converting the bmp to base64. The features include converting the bmp by adjusting the size of the base64. This feature provides accurate rotation adjustment. The bmp to base64 converter tool also inherits the option to adjust the quality of the file to the user’s advantage."
+    },
+    {
+      "question": "What are the parameters provided by the bmp to base64 converter tool?",
+      "answer": "The bmp to base64 converter tool provides various parameters after the user uploads the file. The last modified parameters include time, date, and time zone."
+    },
+    {
+      "question": "What are the special features provided by the bmp to base64 converter tool?",
+      "answer": "The bmp to base64 converter tool facilitates many features while converting the bmp to a base64. It allows the user to adjust the measurements."
+    },
+    {
+      "question": "How does the quality adjustment option of bmp to base64 converter tool work?",
+      "answer": "The quality adjustment option of the bmp to base64 converter tool is an important feature that lets the user decide the overall quality of the base64. This feature adjusts the related parameters."
+    },
+    {
+      "question": "\tCan the user use the bmp to base64 converter tool on my LINUX operating system?",
+      "answer": "Yes, the bmp to base64 converter tool can be utilized on any operating system. It is built with the latest code and features, which enables the user to convert bmp to base64 uploaded by the user on any operating system with a stable internet connection."
+    },
+    {
+      "question": "Can we use the bmp to base64 converter tool on my Apple iPhone 11?",
+      "answer": "Yes, the bmp to base64 converter tool is a cross-platform-based feature, where the user can use this bmp to base64 converter tool on all operating systems such as Android, iOS, Windows, and Mac OS. It is independent of the operating systems but depends on the internet connection."
+    },
+    {
+      "question": "Will my uploaded image files corrupt after converting the bmp using the exquisite options present in the bmp to the base64 converter tool from safeimagekit.com?",
+      "answer": "No, the bmp to base64 converter tool is built with all the latest programs and security features which does not allow the uploaded files to be corrupt. So, the base64 files are safe and secure. Also, safeimagekit.com is a server-free website, due to which no files are stored and are instantly deleted from the memory as soon as the webpage is closed."
+    },
+    {
+      "question": "Will my file is saved after accomplishing working on the bmp to base64 converter tool?",
+      "answer": "No, our tool does not transmit your files to our servers. All the operations are performed on the browser itself, which is completely safe."
+    },
+    {
+      "question": "Do I have to do any additional signup or pay extra to use the bmp to base64 converter tool?",
+      "answer": "Absolutely not; our tool is completely online and does not require email IDs, passwords etc. Our tool is free of cost."
+    },
+    {
+      "question": "\tHow do I communicate if I face any issues or if I want to give any suggestions?",
+      "answer": "We gladly consider any of the issues or suggestions faced by our users offered all of our users; please contact us through our social media handles for more information. Safeimagekit.com is available on Facebook, Instagram, YouTube, LinkedIn, etc."
     }
   ],
   "cssfilepaths": [
