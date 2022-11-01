@@ -71,9 +71,23 @@
                         <span class="text-left" id="data-type">{{page.to}}</span>
 
                         <div class="options-panel p-0 ">
+                            {% if page.fileName == "base64-encode-png" or page.fileName == "convert-image-to-base64" %}
+                            <div class="row p-3">
+                                <div class="col-9 text-left"><label for="splitting">Enable Line Splitting</label></div>
+                                <div class="col-3 pl-1"><input type="checkbox" id="splitting"></div>
+                            </div>
+                            <div class="row p-3">
+                                <div class="col-9 text-left"><label for="chunks">Characters Per Chunk</label></div>
+                                <div class="col-3 pl-1"><input type="number" class="w-100 text-center" id="chunks" value="50" min="1"></div>
+                            </div>
+                            <div class="row p-3">
+                                <div class="col-9 text-left"><label for="validate">Create Valid Data URI</label></div>
+                                <div class="col-3"><input type="checkbox" id="validate"></div>
+                            </div>
+                            {% endif %}
                             <div class="converterBox">
                                 <textarea style="background-color:{{boxColor}};" class=" form-control" name="data-uri"
-                                    id="data-uri"></textarea>
+                                    id="data-uri" readonly></textarea>
                             </div>
                         </div>
 

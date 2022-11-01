@@ -98,32 +98,53 @@ const handleFile = (file) => {
           drawImage()
           stopLoading()
         })
-        dataUri.value = getBase64String(e.target.result)
+        let fVal = getBase64String(e.target.result)
+        const changeText = () => {
+          let value = getBase64String(e.target.result)
+          if (getScript.dataset.filename === "base64-encode-png" || getScript.dataset.filename === "convert-image-to-base64") {
+            if (document.querySelector("#validate").checked)
+              value = `data:${file.type};base64,${value}`
+            if (document.querySelector("#splitting").checked && document.querySelector("#chunks").value !== "" && Number(document.querySelector("#chunks").value) > 0) {
+              let arr = value.match(new RegExp('.{1,' + Number(document.querySelector("#chunks").value) + '}', 'g'))
+              let newVal = ''
+              for (let i = 0; i < arr.length; i++) {
+                if (i !== arr.length - 1)
+                  newVal += arr[i] + '\n'
+                else
+                  newVal += arr[i]
+              }
+              dataUri.value = fVal = newVal
+            } else
+              dataUri.value = fVal = value
+          }
+        }
+        changeText()
+        if (getScript.dataset.filename === "base64-encode-png" || getScript.dataset.filename === "convert-image-to-base64") {
+          document.querySelector("#validate").onchange = () => changeText()
+          document.querySelector("#chunks").onchange = () => changeText()
+          document.querySelector("#splitting").onchange = () => changeText()
+        }
         image.src = e.target.result
-        downloadToText(getBase64String(e.target.result))
+        document.querySelector('.download-txt').addEventListener('click', () => {
+          let a = document.createElement('a')
+          let blob = new Blob([fVal], { type: "text/plain" })
+          a.href = URL.createObjectURL(blob)
+          a.download = `${inputFile.name.split('.')[0]}-safeimagekit.txt`
+          document.body.appendChild(a)
+          a.click()
+          if (lang === 'en') {
+            window.location.href = `/download?tool=${pageTool}`
+          } else {
+            window.location.href = `/${lang}/download?tool=${pageTool}`
+          }
+        })
         copyBtn.addEventListener('click', () => {
-          copyToClipboard(getBase64String(e.target.result))
+          copyToClipboard(fVal)
         })
       }
     }
     reader.readAsDataURL(file)
   }
-}
-
-const downloadToText = (txt) => {
-  document.querySelector('.download-txt').addEventListener('click', () => {
-    let fileType = 'txt'
-    let a = document.createElement('a')
-    a.href = 'data:attachment/text,' + encodeURI(txt)
-    a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
-    document.body.appendChild(a)
-    a.click()
-    if (lang === 'en') {
-      window.location.href = `/download?tool=${pageTool}`
-    } else {
-      window.location.href = `/${lang}/download?tool=${pageTool}`
-    }
-  })
 }
 
 const showLoading = () => {
