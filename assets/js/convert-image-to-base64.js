@@ -99,31 +99,28 @@ const handleFile = (file) => {
           stopLoading()
         })
         let fVal = getBase64String(e.target.result)
+        let b64String = fVal
         const changeText = () => {
-          let value = getBase64String(e.target.result)
-          if (getScript.dataset.filename === "base64-encode-png" || getScript.dataset.filename === "convert-image-to-base64") {
-            if (document.querySelector("#validate").checked)
-              value = `data:${file.type};base64,${value}`
-            if (document.querySelector("#splitting").checked && document.querySelector("#chunks").value !== "" && Number(document.querySelector("#chunks").value) > 0) {
-              let arr = value.match(new RegExp('.{1,' + Number(document.querySelector("#chunks").value) + '}', 'g'))
-              let newVal = ''
-              for (let i = 0; i < arr.length; i++) {
-                if (i !== arr.length - 1)
-                  newVal += arr[i] + '\n'
-                else
-                  newVal += arr[i]
-              }
-              dataUri.value = fVal = newVal
-            } else
-              dataUri.value = fVal = value
-          }
+          let value = b64String
+          if (document.querySelector("#validate").checked)
+            value = `data:${file.type};base64,${value}`
+          if (document.querySelector("#splitting").checked && document.querySelector("#chunks").value !== "" && Number(document.querySelector("#chunks").value) > 0) {
+            let arr = value.match(new RegExp('.{1,' + Number(document.querySelector("#chunks").value) + '}', 'g'))
+            let newVal = ''
+            for (let i = 0; i < arr.length; i++) {
+              if (i !== arr.length - 1)
+                newVal += arr[i] + '\n'
+              else
+                newVal += arr[i]
+            }
+            dataUri.value = fVal = newVal
+          } else
+            dataUri.value = fVal = value
         }
         changeText()
-        if (getScript.dataset.filename === "base64-encode-png" || getScript.dataset.filename === "convert-image-to-base64") {
-          document.querySelector("#validate").onchange = () => changeText()
-          document.querySelector("#chunks").onchange = () => changeText()
-          document.querySelector("#splitting").onchange = () => changeText()
-        }
+        document.querySelector("#validate").onchange = () => changeText()
+        document.querySelector("#chunks").onchange = () => changeText()
+        document.querySelector("#splitting").onchange = () => changeText()
         image.src = e.target.result
         document.querySelector('.download-txt').addEventListener('click', () => {
           let a = document.createElement('a')

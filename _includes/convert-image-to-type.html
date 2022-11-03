@@ -49,7 +49,7 @@
     <div class="workspace" style="display: none;">
 
         <div class="row">
-            <div class="col-md-9 mx-auto">
+            <div class="col-md-10 mx-auto">
                 <div class="row">
                     <div class="col-md-6">
                         <span class="text-left" id="data-type">{{page.convert}}</span>
@@ -71,7 +71,6 @@
                         <span class="text-left" id="data-type">{{page.to}}</span>
 
                         <div class="options-panel p-0 ">
-                            {% if page.fileName == "base64-encode-png" or page.fileName == "convert-image-to-base64" %}
                             <div class="row p-3">
                                 <div class="col-9 text-left"><label for="splitting">Enable Line Splitting</label></div>
                                 <div class="col-3 pl-1"><input type="checkbox" id="splitting"></div>
@@ -84,7 +83,6 @@
                                 <div class="col-9 text-left"><label for="validate">Create Valid Data URI</label></div>
                                 <div class="col-3"><input type="checkbox" id="validate"></div>
                             </div>
-                            {% endif %}
                             <div class="converterBox">
                                 <textarea style="background-color:{{boxColor}};" class=" form-control" name="data-uri"
                                     id="data-uri" readonly></textarea>
