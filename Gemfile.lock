@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    appscms-tools-theme (1.8.8)
+    appscms-tools-theme (2.6.3)
       jekyll (~> 3.9)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
@@ -13,6 +13,7 @@ GEM
     eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x64-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
@@ -70,11 +71,12 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  x64-mingw-ucrt
   x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
-  appscms-tools-theme (~> 1.8.8)
+  appscms-tools-theme (~> 2.6.3)
   jekyll (~> 3.9.0)
   jekyll-feed
   jekyll-include-cache
