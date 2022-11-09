@@ -13,20 +13,6 @@ const base64 = document.getElementById("data-uri")
 const copyBtn = document.querySelector(".copy-btn")
 base64.focus()
 
-
-const drawImage = () => {
-    const canvas = document.createElement('canvas')
-    canvas.setAttribute('id', 'canvas-img')
-    let ctx = canvas.getContext('2d')
-
-    canvas.width = image.width
-    canvas.height = image.height
-    ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
-
-    canvasPanel.innerHTML = ''
-    canvasPanel.appendChild(canvas)
-}
-
 base64.addEventListener("input", (e) => {
     handleFile(e.target.value)
 })
@@ -38,7 +24,7 @@ const handleFile = (file) => {
     if (file) {
         image = new Image()
         image.addEventListener("load", () => {
-            drawImage()
+            canvasPanel.appendChild(image)
         })
         image.src = inputFile
 
@@ -70,10 +56,8 @@ const handleDownload = () => {
     document.querySelector("#file-loader").style.display = "none"
     // fileDropBox.style.display = 'flex'
 
-    let fileType = "png"
-    let canvas = document.querySelector('#canvas-img')
-    let url = canvas.toDataURL(`image/${fileType}`)
-
+    let url = canvasPanel.querySelector("img").src
+    let fileType = url.split(';')[0].split('/')[1]
     let a = document.createElement('a')
     a.href = url
     a.download = `safeimagekit.${fileType}`
