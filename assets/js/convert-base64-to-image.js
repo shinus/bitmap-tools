@@ -51,7 +51,7 @@ const handleFile = (file) => {
   if (file) {
     image = new Image()
     image.addEventListener('load', () => {
-      drawImage()
+      canvasPanel.appendChild(image)
     })
 
     image.src = `data:${workspace.dataset.mime};base64,` + inputFile
@@ -87,8 +87,7 @@ const handleDownload = () => {
   // fileDropBox.style.display = 'flex'
   // console.log(workspace.dataset)
   let fileType = "png"
-  let canvas = document.querySelector('#canvas-img')
-  let url = canvas.toDataURL(`image/${fileType}`)
+  let url = canvasPanel.querySelector("img").src
   let a = document.createElement('a')
   a.href = url
   a.download = `safeimagekit.${fileType}`
