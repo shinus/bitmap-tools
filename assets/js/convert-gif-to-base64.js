@@ -75,8 +75,7 @@ fileDropBox.addEventListener('drop', (e) => {
 })
 
 const handleFile = (file) => {
-  document.querySelector('#file-loader').style.display = 'flex'
-  document.querySelector('.file-input').style.display = 'none'
+  showLoading()
   inputFile = file
   if (file) {
     const reader = new FileReader()
@@ -86,35 +85,52 @@ const handleFile = (file) => {
         image.addEventListener('load', () => {
           canvasPanel.appendChild(image)
           stopLoading()
-          workspace.style.display = 'block'
+          workspace.style.display = "block"
         })
-        dataUri.value = getBase64String(e.target.result)
+        let fVal = getBase64String(e.target.result)
+        let b64String = fVal
+        const changeText = () => {
+          let value = b64String
+          if (document.querySelector("#validate").checked)
+            value = `data:${file.type};base64,${value}`
+          if (document.querySelector("#splitting").checked && document.querySelector("#chunks").value !== "" && Number(document.querySelector("#chunks").value) > 0) {
+            let arr = value.match(new RegExp('.{1,' + Number(document.querySelector("#chunks").value) + '}', 'g'))
+            let newVal = ''
+            for (let i = 0; i < arr.length; i++) {
+              if (i !== arr.length - 1)
+                newVal += arr[i] + '\n'
+              else
+                newVal += arr[i]
+            }
+            dataUri.value = fVal = newVal
+          } else
+            dataUri.value = fVal = value
+        }
+        changeText()
+        document.querySelector("#validate").onchange = () => changeText()
+        document.querySelector("#chunks").onchange = () => changeText()
+        document.querySelector("#splitting").onchange = () => changeText()
         image.src = e.target.result
-
-        downloadToText(getBase64String(e.target.result))
+        document.querySelector('.download-txt').addEventListener('click', () => {
+          let a = document.createElement('a')
+          let blob = new Blob([fVal], { type: "text/plain" })
+          a.href = URL.createObjectURL(blob)
+          a.download = `${inputFile.name.split('.')[0]}-safeimagekit.txt`
+          document.body.appendChild(a)
+          a.click()
+          if (lang === 'en') {
+            window.location.href = `/download?tool=${pageTool}`
+          } else {
+            window.location.href = `/${lang}/download?tool=${pageTool}`
+          }
+        })
         copyBtn.addEventListener('click', () => {
-          copyToClipboard(getBase64String(e.target.result))
+          copyToClipboard(fVal)
         })
       }
     }
     reader.readAsDataURL(file)
   }
-}
-
-const downloadToText = (txt) => {
-  document.querySelector('.download-txt').addEventListener('click', () => {
-    let fileType = '.txt'
-    let a = document.createElement('a')
-    a.href = 'data:attachment/text,' + encodeURI(txt)
-    a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
-    document.body.appendChild(a)
-    a.click()
-    if (lang === 'en') {
-      window.location.href = `/download?tool=${pageTool}`
-    } else {
-      window.location.href = `/${lang}/download?tool=${pageTool}`
-    }
-  })
 }
 
 const showLoading = () => {
@@ -140,23 +156,18 @@ showDropDown.addEventListener('click', () => {
   }
 })
 const handleDownload = () => {
-  var url = image.src
-  fetch(url)
-    .then((res) => res.blob())
-    .then((bloburl) => {
-      let a = document.createElement('a')
-      console.log(bloburl)
-      let fileType = inputFile.type.split('image/')[1]
-      a.href = URL.createObjectURL(bloburl)
-      a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
-      document.body.appendChild(a)
-      a.click()
-      if (lang === 'en') {
-        window.location.href = `/download?tool=${pageTool}`
-      } else {
-        window.location.href = `/${lang}/download?tool=${pageTool}`
-      }
-    })
+  workspace.style.display = 'none'
+  canvasPanel.style.display = 'none'
+  document.querySelector('#file-loader').style.display = 'none'
+  fileDropBox.style.display = 'flex'
+  // document.querySelector('.saving-file-download-wrap').style.display = 'flex'
+  let fileType = inputFile.type.split('image/')[1]
+  let url = canvasPanel.querySelector("img").src
+
+  let a = document.createElement('a')
+  a.href = url
+  a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
+  document.body.appendChild(a)
   a.click()
   if (lang === 'en') {
     window.location.href = `/download?tool=${pageTool}`
