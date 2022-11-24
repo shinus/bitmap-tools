@@ -7,9 +7,9 @@ url: https://safeimagekit.com # the base hostname & protocol for your site, e.g.
 siteurl: https://safeimagekit.com
 twitter_username: jekyllrb
 github_username: jekyll
-favicon: /picture.png
-logo: /picture.png
-pwalogo: /picture.png
+favicon: /picture.webp
+logo: /picture.webp
+pwalogo: /picture.webp
 paginate: '12'
 paginate_path: '/blog/page:num/'
 alternateName: safeimagekit
