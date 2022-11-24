@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    appscms-tools-theme (2.7.3)
+    appscms-tools-theme (2.9.4)
       jekyll (~> 3.9)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
@@ -76,7 +76,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  appscms-tools-theme (~> 2.7.3)
+  appscms-tools-theme (~> 2.9.4)
   jekyll (~> 3.9.0)
   jekyll-feed
   jekyll-include-cache
