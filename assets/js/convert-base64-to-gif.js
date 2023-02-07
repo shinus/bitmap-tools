@@ -4,7 +4,8 @@ const lang = getScript.dataset.lang
 
 const downloadButton = document.querySelector('#download-button')
 const workspace = document.querySelector('.workspace')
-const canvasPanel = document.getElementById('canvas-panel')
+workspace.style.display = "block"
+const canvasPanel = document.getElementById('canvas-box-panel')
 let inputFile = ''
 let fileName = ''
 let image = null

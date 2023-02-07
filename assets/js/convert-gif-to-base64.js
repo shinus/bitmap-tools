@@ -11,7 +11,7 @@ let croppedImageWidth = ''
 let root = document.querySelector(':root')
 root.style.setProperty('--maincolor', fileDropBox.dataset.color)
 const workspace = document.querySelector('.workspace')
-const canvasPanel = document.getElementById('canvas-panel')
+const canvasPanel = document.getElementById('canvas-box-panel')
 let inputFile = ''
 let fileName = ''
 let image = null
@@ -111,7 +111,7 @@ const handleFile = (file) => {
         document.querySelector("#chunks").onchange = () => changeText()
         document.querySelector("#splitting").onchange = () => changeText()
         image.src = e.target.result
-        document.querySelector('.download-txt').addEventListener('click', () => {
+        const handleDownload = () => {
           let a = document.createElement('a')
           let blob = new Blob([fVal], { type: "text/plain" })
           a.href = URL.createObjectURL(blob)
@@ -123,7 +123,8 @@ const handleFile = (file) => {
           } else {
             window.location.href = `/${lang}/download?tool=${pageTool}`
           }
-        })
+        }
+        downloadButton.addEventListener('click', handleDownload)
         copyBtn.addEventListener('click', () => {
           copyToClipboard(fVal)
         })
@@ -155,27 +156,6 @@ showDropDown.addEventListener('click', () => {
     icon.classList.add('fa-angle-up')
   }
 })
-const handleDownload = () => {
-  workspace.style.display = 'none'
-  canvasPanel.style.display = 'none'
-  document.querySelector('#file-loader').style.display = 'none'
-  fileDropBox.style.display = 'flex'
-  // document.querySelector('.saving-file-download-wrap').style.display = 'flex'
-  let fileType = inputFile.type.split('image/')[1]
-  let url = canvasPanel.querySelector("img").src
-
-  let a = document.createElement('a')
-  a.href = url
-  a.download = `${inputFile.name.split('.')[0]}-safeimagekit.${fileType}`
-  document.body.appendChild(a)
-  a.click()
-  if (lang === 'en') {
-    window.location.href = `/download?tool=${pageTool}`
-  } else {
-    window.location.href = `/${lang}/download?tool=${pageTool}`
-  }
-}
-downloadButton.addEventListener('click', handleDownload)
 
 const getBase64String = (dataURL) => {
   const idx = dataURL.indexOf('base64,') + 'base64,'.length

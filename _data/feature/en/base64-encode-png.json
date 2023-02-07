@@ -5,6 +5,8 @@
   "H2": "Convert png to base64 in simple steps",
   "TITLE": "Convert PNG to Base64- An easy and free online tool",
   "META": "This tool helps you to convert your png to Base64 quickly. The simplest tool for web developers.",
+  "optionPanelTitle": "Convert PNG to base64",
+  "downloadFormats": ["txt"],
   "img": "/img/tool.png",
   "imgwidth": "40px",
   "imgheight": "40px",

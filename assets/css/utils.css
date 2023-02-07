@@ -8,15 +8,18 @@
   justify-content: center;
   align-items: center;
 }
+
 #canvas-panel #canvas-img {
   max-width: 100%;
 }
+
 .options-panel {
   box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
   border-radius: 4px;
   padding: 20px;
   width: 100%;
 }
+
 .options-panel .title {
   width: 100%;
   margin-bottom: 20px;
@@ -26,6 +29,7 @@
   font-weight: 700;
   text-align: left;
 }
+
 .options-panel .description {
   width: 100%;
   font-size: 16px;
@@ -33,6 +37,7 @@
   font-weight: 400;
   text-align: left;
 }
+
 .options-title {
   width: 100%;
   font-size: 16px;
@@ -40,52 +45,36 @@
   font-weight: 400;
   text-align: left;
 }
-#download-button,
-.download-txt {
-  cursor: pointer;
-  display: inline-block;
-  width: 100%;
-  padding: 14px 0;
-  margin-bottom: 20px;
-  text-align: center;
-  border-radius: 50px;
-  background: #0050e5;
-  font-size: 18px;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.3s;
-  border: none;
-}
-#download-button svg {
-  fill: #fff;
-  margin-right: 4px;
-  height: 20px;
-}
+
 #img-svg {
   margin: auto;
   margin-top: 16px;
   height: 67px;
   width: 98px;
 }
+
 #file-loader {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 #file-loader img {
   height: 60px;
 }
+
 #file-loader p {
   text-align: center;
   color: #fff;
   font-size: 17px;
 }
+
 #loading-img {
   height: 27px;
   width: 27px;
   margin-right: 21px;
 }
+
 .inner-box {
   border: 1px dashed rgba(0, 0, 0, 0.15);
   background: rgba(0, 0, 0, 0.1);
@@ -93,6 +82,7 @@
   min-height: 300px;
   width: 100%;
 }
+
 #dropfile {
   font-size: 16px;
   margin-top: 15px;
@@ -116,16 +106,19 @@ html {
   text-align: center;
   color: white;
 }
+
 #svgcontainer {
   height: 1px;
   width: 1px;
   visibility: hidden;
 }
+
 #upper-loader {
   width: 0%;
   height: 13px;
   background: white;
 }
+
 .frame {
   background: red;
   border: 1px solid white;
@@ -133,6 +126,7 @@ html {
   height: 350px;
   margin: auto;
 }
+
 #demo {
   visibility: hidden;
 }
@@ -223,6 +217,7 @@ html {
   text-align: center;
   background: #fdecea;
 }
+
 #error {
   color: rgb(97, 26, 21);
   font-weight: bold;
@@ -238,11 +233,13 @@ html {
   color: white;
   font-size: 25px;
 }
+
 @media (max-width: 560px) {
   #loadingMessage {
     font-size: 24px;
   }
 }
+
 @media (max-width: 425px) {
   #loadingMessage {
     font-size: 20px;
@@ -259,6 +256,7 @@ html {
   width: 80px;
   margin-top: 50px;
 }
+
 #thankyouText {
   text-align: center;
   color: white;
@@ -278,9 +276,11 @@ html {
   position: relative;
   margin-top: -14px;
 }
+
 .file-pick-dropdown i {
   margin: 0;
 }
+
 .file-picker-dropdown {
   width: 220px;
   position: absolute;
@@ -291,13 +291,16 @@ html {
   box-shadow: rgb(26 26 26 / 20%) 0px 0px 12px;
   border-radius: 4px;
 }
+
 .arrow-sign {
   font-size: 18px;
 }
+
 .file-picker-dropdown svg {
   height: 24px;
   width: 24px;
 }
+
 .file-picker-dropdown button,
 .file-picker-dropdown a {
   border: none;
@@ -312,9 +315,11 @@ html {
   list-style: none;
   height: 54px;
 }
+
 .file-picker-dropdown button:hover {
   background: #efefef;
 }
+
 #downloadButton svg {
   height: 25px;
 }
@@ -324,6 +329,7 @@ html {
   height: 300px;
   margin: auto;
 }
+
 #upload_img {
   margin: auto;
   margin-top: 16px;
@@ -337,6 +343,7 @@ html {
     width: 90%;
   }
 }
+
 #saving {
   height: 59px;
   width: 209px;
@@ -354,6 +361,7 @@ html {
     width: 80%;
   }
 }
+
 @media (max-width: 506px) {
   #saving {
     margin-right: 13px;
@@ -367,12 +375,15 @@ html {
   overflow: auto;
   margin-top: 45px;
 }
+
 #splitList ol li {
   color: white;
 }
+
 #splitList ol {
   float: left;
 }
+
 #splitList canvas {
   height: auto;
   width: auto;
@@ -385,6 +396,7 @@ html {
   padding: 11px 18px;
   width: 155px;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -395,4 +407,18 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
+}
+
+.copy-btn {
+  background-color: #5581b5d6;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  filter: drop-shadow(0 0 .8rem rgba(0, 0, 0, .11));
+  cursor: pointer;
+}
+
+#canvas-box-panel canvas, #canvas-box-panel img {
+  width: 100%;
 }

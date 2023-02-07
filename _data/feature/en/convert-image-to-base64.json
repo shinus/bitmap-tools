@@ -5,6 +5,8 @@
   "H2": "Convert image to base64 in simple steps",
   "TITLE": "Convert Image to base64- Simple and easy to use tool",
   "META": "This tool helps you to convert your Image to Base64 with just few clicks. The simplest tool for web developers.",
+  "optionPanelTitle": "Convert image to base64",
+  "downloadFormats": ["txt"],
   "img": "/img/base64.png",
   "keywords": "",
   "imgwidth": "40px",
