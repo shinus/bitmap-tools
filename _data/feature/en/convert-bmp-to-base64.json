@@ -5,6 +5,8 @@
   "H2": "Convert BMP to base64 in simple steps",
   "TITLE": "Convert BMP to Base64- An easy and free online tool",
   "META": "This tool helps you to convert your bitmap image to Base64 quickly. The simplest tool for web developers.",
+  "optionPanelTitle": "Convert BMP to base64",
+  "downloadFormats": ["txt"],
   "img": "/img/base64.png",
   "keywords": "",
   "imgwidth": "40px",

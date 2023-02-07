@@ -5,6 +5,8 @@
   "H2": "Convert GIF to base64 in simple steps",
   "TITLE": "Convert GIF to base64 online directly in the browser",
   "META": "Advanced web based tool to convert GIF to base64 quickly. No desktop software installation is required. Simple and easy to use tool.",
+  "optionPanelTitle": "Convert GIF to Base64",
+  "downloadFormats": ["txt"],
   "img": "/img/base64.png",
   "imgwidth": "40px",
   "imgheight": "40px",

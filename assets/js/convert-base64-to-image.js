@@ -4,7 +4,14 @@ const lang = getScript.dataset.lang
 
 const downloadButton = document.querySelector('#download-button')
 const workspace = document.querySelector('.workspace')
-const canvasPanel = document.getElementById('canvas-panel')
+workspace.style.display = "block"
+const canvasPanel = document.getElementById('canvas-box-panel')
+let placeholderImage = new Image()
+placeholderImage.onload = e => {
+  canvasPanel.appendChild(placeholderImage)
+  placeholderImage.style.width = "100%"
+}
+placeholderImage.src = "/img/placeholder-image.jpg"
 let inputFile = ''
 let fileName = ''
 let image = null
@@ -51,6 +58,7 @@ const handleFile = (file) => {
   if (file) {
     image = new Image()
     image.addEventListener('load', () => {
+      canvasPanel.innerHTML = ''
       canvasPanel.appendChild(image)
     })
 
@@ -86,10 +94,14 @@ const handleDownload = () => {
   // document.querySelector('#file-loader').style.display = 'none'
   // fileDropBox.style.display = 'flex'
   // console.log(workspace.dataset)
-  let fileType = "png"
-  let url = canvasPanel.querySelector("img").src
+  let fileType = document.querySelector("#image-format").value
+  let canvas = document.createElement('canvas'), ctx = canvas.getContext('2d')
+  let image = canvasPanel.querySelector("img")
+  canvas.width = image.width
+  canvas.height = image.height
+  ctx.drawImage(image, 0, 0)
   let a = document.createElement('a')
-  a.href = url
+  a.href = canvas.toDataURL()
   a.download = `safeimagekit.${fileType}`
   document.body.appendChild(a)
   a.click()

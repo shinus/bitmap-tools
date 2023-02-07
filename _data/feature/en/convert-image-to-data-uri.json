@@ -5,6 +5,8 @@
   "H2": "Convert image to data uri in simple steps",
   "TITLE": "Free tool to convert image (png, jpeg) files to Data URI quickly",
   "META": "Online image to Data URI conversion tool is the best tool to improve your webpage performance. Online, free, simple and easy to use tool",
+  "optionPanelTitle": "Convert image to data URI",
+  "downloadFormats": ["txt"],
   "img": "/img/data-uri.png",
   "keywords": "",
   "imgwidth": "40px",
