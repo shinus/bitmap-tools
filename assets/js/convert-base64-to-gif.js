@@ -6,6 +6,12 @@ const downloadButton = document.querySelector('#download-button')
 const workspace = document.querySelector('.workspace')
 workspace.style.display = "block"
 const canvasPanel = document.getElementById('canvas-box-panel')
+let placeholderImage = new Image()
+placeholderImage.onload = e => {
+  canvasPanel.appendChild(placeholderImage)
+  placeholderImage.style.width = "100%"
+}
+placeholderImage.src = "/img/placeholder-image.jpg"
 let inputFile = ''
 let fileName = ''
 let image = null
