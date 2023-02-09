@@ -1,5 +1,5 @@
 ---
-layout: feature
+layout: imagekit
 folderName: feature
 lang: en
 fileName: base64-encode-png

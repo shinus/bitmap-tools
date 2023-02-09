@@ -4,7 +4,14 @@ const lang = getScript.dataset.lang
 
 const downloadButton = document.querySelector('#download-button')
 const workspace = document.querySelector('.workspace')
-const canvasPanel = document.getElementById('canvas-panel')
+workspace.style.display = "block"
+const canvasPanel = document.getElementById('canvas-box-panel')
+let placeholderImage = new Image()
+placeholderImage.onload = e => {
+  canvasPanel.appendChild(placeholderImage)
+  placeholderImage.style.width = "100%"
+}
+placeholderImage.src = "/img/placeholder-image.jpg"
 let inputFile = ''
 let fileName = "";
 let image = null;
@@ -18,8 +25,6 @@ base64.addEventListener("input", (e) => {
 })
 
 const handleFile = (file) => {
-    document.querySelector('#file-loader').style.display = 'flex'
-    document.querySelector('.file-input').style.display = 'none'
     inputFile = file
     if (file) {
         image = new Image()
@@ -53,11 +58,10 @@ const downloadToText = (txt) => {
 const handleDownload = () => {
     workspace.style.display = "none"
     canvasPanel.style.display = 'none'
-    document.querySelector("#file-loader").style.display = "none"
     // fileDropBox.style.display = 'flex'
 
     let url = canvasPanel.querySelector("img").src
-    let fileType = url.split(';')[0].split('/')[1]
+    let fileType = document.querySelector("#image-format").value
     let a = document.createElement('a')
     a.href = url
     a.download = `safeimagekit.${fileType}`
