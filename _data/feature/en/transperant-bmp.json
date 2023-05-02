@@ -1,0 +1,69 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "H1": "Adjust image opacity online",
+    "H2": "Upload an image and change the opacity to achieve the desired result",
+    "img": "/img/split.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "nofileupload": true,
+    "variant": "primary",
+    "imgalt": "altvalue",
+    "TITLE": "Image opacity-A simple, free tool for adjusting the opacity of any image",
+    "META": "Simple online tool for adjusting opacity of image. Upload an image, preview your new image effect, and download it to adjust the opacity value using the control button.",
+    "LABEL": "",
+    "BREADCRUMB_LABEL": "",
+    "color": "#4C2818",
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/target.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cross.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/shield.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/fast.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/images/cloud_new.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {},
+    "FAQ": {},
+    "jscdns": [
+        "<script src=\"/assets/js/googledrive.js\"></script>"
+    ],
+    "jsfilepaths": [
+        "/js/cropper.min.js",
+        "/js/change-png-opacity.js"
+    ],
+    "cssfilepaths": [
+        "/css/cropper.min.css",
+        "/css/image-effects.css"
+    ],
+    "keywords": "image opacity, image opacity css, image opacity editor, image opacity html, image opacity online"
+}
