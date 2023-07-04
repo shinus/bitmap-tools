@@ -1,10 +1,10 @@
 {
   "Language": "English",
   "htmlLangAtt": "en",
-  "H1": "Free online Base64 to BMP Converter",
-  "H2": "Convert base64 to BMP in simple steps",
-  "TITLE": "Convert Base64 to BMP- An easy and free online tool",
-  "META": "This tool helps you to convert your Base64 to Bitmap image quickly. The simplest tool for web developers.",
+  "H1": "Base64 to BMP Conversion",
+  "H2": "Simply the Decoding Process with Base64 to BMP Converter",
+  "TITLE": "Convert Base64 To BMP Format with Decoder",
+  "META": "Easily convert Base64 to BMP format using our reliable Base64 decoder. Simply upload your Base64 file to download your bitmap images instantly.",
   "optionPanelTitle": "Convert Base64 to BMP",
   "downloadFormats": ["bmp"],
   "img": "/img/base64.png",
@@ -71,6 +71,6 @@
     "<script src=\"/assets/js/googledrive.js\"></script>"
   ],
   "jsfilepaths": [
-    "/assets/js/convert-base64-to-image.js"
+    "/js/convert-base64-to-image.js"
   ]
 }

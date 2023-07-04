@@ -8,34 +8,8 @@
   "socialshareheading": "We are a free to use platform for safe processing of your files. We need your support to grow. Help us by sharing us on social media. Thanks !",
   "recommendedsitesheading": "Try our other sites for safe processing of you files!",
   "recommendedfeatures": [
-    {
-      "name": "Convert image to base64",
-      "description": "Free online image to base64 converter",
-      "color": "#5581b5d6",
-      "logo": "/img/base64.png",
-      "url": "/base64/convert-image-to-base64"
-    },
-    {
-      "name": "Convert base64 to image",
-      "description": "Free online base64 to image converter",
-      "color": "#5581b5",
-      "logo": "/img/base64.png",
-      "url": "/base64/convert-base64-to-image"
-    },
-    {
-      "name": "Image to data uri converter",
-      "description": "Online image to data uri conversion tool",
-      "color": "#5581b5d6",
-      "logo": "/img/data-uri.png",
-      "url": "/base64/convert-image-to-data-uri"
-    },
-    {
-      "name": "Convert data uri to image",
-      "description": "Online data uri to image conversion tool",
-      "color": "#5581b5",
-      "logo": "/img/data-uri.png",
-      "url": "/base64/convert-data-uri-to-image"
-    },
+   
+   
     {
       "name": "Convert bmp to base64",
       "description": "Free online bmp to base64 converter",
@@ -49,27 +23,6 @@
       "color": "#5581b5",
       "logo": "/img/base64.png",
       "url": "/base64/convert-base64-to-bmp"
-    },
-    {
-      "name": "Convert gif to base64",
-      "description": "Free online gif to base64 converter",
-      "color": "#5581b5d6",
-      "logo": "/img/base64.png",
-      "url": "/base64/convert-gif-to-base64"
-    },
-    {
-      "name": "Convert base64 to gif",
-      "description": "Free online base64 to gif converter",
-      "color": "#5581b5",
-      "logo": "/img/base64.png",
-      "url": "/base64/convert-base64-to-gif"
-    },
-    {
-      "name": "Base64 encode png",
-      "description": "Free online png to base64 converter",
-      "color": "#5581b5d6",
-      "logo": "/img/tool.png",
-      "url": "/base64/encode-png"
     }
   ],
   "recommendedsites": [
